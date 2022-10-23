@@ -1,6 +1,5 @@
-# IS pro oddíl
+# IS pro oddíl (Oddílový systém)
 
-Oddílový systém
 S kamarády vedeme oddíl dětí. Děti máme rozděleny do skupin po 15. Za každou skupinu zodpovídají 2 vedoucí, kteří tvoří její program. 
 
 Potřebujeme vytvořit systém, který bude informovat rodiče o námi plánovaných akcích. Rodiče mohou mít více dětí, které mohou být v různých skupinách, měli by mít možnost sledovat program odpovídajících skupin. Rodiče by nám měli v případě nemoci nebo jiného důvodu, že se dítě nemůže dostavit, dát pomoci systému vědět, abychom případně nečekali na místě srazu na někoho, kdo nepřijde.
