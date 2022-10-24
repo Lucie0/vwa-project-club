@@ -22,6 +22,7 @@ Program pro skupiny může být různý, může se odehrávat buď v našem are�
 
 Jelikož se snažíme podporovat i IT gramotnost, přístup do systému budou mít i děti. Ty budou moci sledovat program, který je čeká a budou mít k dispozici propozice k jednotlivým akcím. Potřebujeme, aby náš web nesloužil pouze jako informační systém, ale také jako nástroj propagace.
 
+
 ## Případy užití
 ![](docs/use-case.jpeg)
 
