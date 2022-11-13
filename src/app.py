@@ -2,7 +2,7 @@ import os
 
 from flask import Flask
 from src.routes.api import api_blueprint
-from src.routes.web import web_blueprint, admin_blueprint
+from src.routes.web import web_blueprint, admin_blueprint, err_blueprint
 
 # initialize application
 app = Flask(__name__)
@@ -18,6 +18,7 @@ else:
 app.register_blueprint(api_blueprint)
 app.register_blueprint(web_blueprint)
 app.register_blueprint(admin_blueprint)
+app.register_blueprint(err_blueprint)
 
 if __name__ == "__main__":
     app.run()
