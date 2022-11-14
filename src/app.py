@@ -32,5 +32,10 @@ def img(filename):
     return send_from_directory("static/img", filename)
 
 
+@app.route("/static/js/<filename>")
+def js(filename):
+    return send_from_directory("static/js", filename)
+
+
 if __name__ == "__main__":
     app.run()
