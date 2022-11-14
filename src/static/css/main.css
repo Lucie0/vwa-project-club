@@ -13,6 +13,7 @@
 
 a, a:visited {
     text-decoration: none;
+    color: var(--text);
 }
 
 /* HEADER */
@@ -82,6 +83,25 @@ nav ul a {
     transform: rotate(90deg);
 }
 
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+footer section i {
+    font-size: 35px;
+    margin: auto 10px;
+}
+
+footer span {
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
 @media only screen and (max-width: 768px) {
     nav {
         display: none;

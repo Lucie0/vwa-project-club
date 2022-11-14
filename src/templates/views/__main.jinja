@@ -21,10 +21,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/ff19d975f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 {% include "views/__header.jinja" %}
 {% block main %}{% endblock %}
+{% include "views/__footer.jinja" %}
 
 <script src="{{ url_for('js', filename='main.js') }}"></script>
 </body>
