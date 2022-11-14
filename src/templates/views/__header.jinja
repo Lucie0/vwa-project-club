@@ -1,0 +1,21 @@
+{% block nav %}
+    <header>
+        <a href="{{ url_for('web.index') }}">
+            <h1>Skautské oddíly</h1>
+        </a>
+        <nav id="nav">
+            <ul>
+                <li><a href="{{ url_for('web.index') }}">Domů</a></li>
+                <li><a href="{{ url_for('web.about') }}">O nás</a></li>
+                <li><a href="{{ url_for('web.gallery') }}">Galerie</a></li>
+                <li><a href="{{ url_for('web.contact') }}">Kontakt</a></li>
+                <li class="login"><a href="{{ url_for('web.login') }}">Přihlásit se</a></li>
+            </ul>
+        </nav>
+        <div id="burger" onclick="toggleNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+{% endblock %}

@@ -1,0 +1,63 @@
+main {
+    padding: 60px;
+}
+
+main article {
+    width: 80%;
+    margin: 30px auto;
+}
+
+article p {
+    font-size: 18px;
+    color: var(--text);
+    margin: 15px;
+}
+
+.events {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.events ul li {
+    margin: 10px auto;
+}
+
+/* PARALLAX SCROLLING */
+.parallax {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parallax-content {
+    min-width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parallax-content p {
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.parallax-content button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--text);
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -1,16 +1,16 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 web = Blueprint("web", __name__)
 
 
 @web.get("/")
-def index():  # TODO
+def index():
     """
     @route GET /
     @desc Visit homepage
     @access Public
     """
-    pass
+    return render_template("views/index.jinja")
 
 
 @web.get("/onas")

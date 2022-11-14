@@ -1,0 +1,60 @@
+{% extends "views/__main.jinja" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{{ url_for('css', filename='index.css') }}">
+{% endblock %}
+
+{% block main %}
+    <main>
+        <section style="background-image: url({{ url_for('img', filename='main_parallax.webp') }})"
+                 class="parallax">
+            <div class="parallax-content">
+                <p>Přihlašte své dítě ještě dnes</p>
+                <button>Zaregistrovat se</button>
+            </div>
+        </section>
+
+        <article>
+            <h2>Nadcházející akce</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Duis
+                condimentum augue id magna semper rutrum. </p>
+            <p>Suspendisse sagittis ultrices augue. Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Fusce dui
+                leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Vivamus luctus egestas leo. Proin pede metus,
+                vulputate nec, fermentum fringilla, vehicula vitae, justo. Aliquam in lorem sit amet leo accumsan</p>
+            <p>
+                lacinia. Etiam egestas wisi a erat. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel
+                sapien. Duis condimentum augue id magna semper rutrum. Pellentesque arcu. Etiam egestas wisi a erat.</p>
+            <p>
+                Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
+                metus. Aliquam erat volutpat. Nam sed tellus id magna elementum tincidunt. Sed elit dui, pellentesque a,
+                faucibus vel, interdum nec, diam. Morbi leo mi, nonummy eget tristique non, rhoncus non leo.</p>
+        </article>
+
+        <article class="events">
+            <div>
+                <h3>Prosinec</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>Vestibulum auctor dapibus neque.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>Vestibulum auctor dapibus neque.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>Vestibulum auctor dapibus neque.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Leden</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>Vestibulum auctor dapibus neque.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>Vestibulum auctor dapibus neque.</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+{% endblock %}

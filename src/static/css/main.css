@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --primary: #fcb944;
+    --secondary: #025a9a;
+    --text: #262626;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: var(--primary);
+}
+
+header h1 {
+    color: var(--secondary);
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    gap: 15px;
+}
+
+nav ul a {
+    display: block;
+    color: var(--secondary);
+    font-size: 18px;
+    padding: 12px;
+}
+
+.login {
+    background-color: var(--secondary);
+    margin-left: auto;
+}
+
+.login a {
+    color: var(--primary);
+}
+
+/* BURGER */
+#burger {
+    cursor: pointer;
+    transition: .4s;
+    display: none;
+    margin-left: auto;
+}
+
+#burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary);
+    margin: 5px;
+    transition: .4s;
+}
+
+.nav-active {
+    display: block;
+}
+
+.burger-active {
+    transform: rotate(90deg);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary);
+    color: var(--text);
+    align-items: center;
+}
+
+footer section i {
+    font-size: 35px;
+    margin: auto 10px;
+}
+
+footer span {
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        background-color: var(--primary);
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .login {
+        background-color: transparent;
+        margin: 0;
+    }
+
+    .login a {
+        color: var(--secondary);
+    }
+
+    #burger {
+        display: block;
+    }
+}
