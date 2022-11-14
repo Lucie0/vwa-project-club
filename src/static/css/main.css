@@ -90,6 +90,7 @@ footer {
     padding: 20px;
     background-color: var(--primary);
     color: var(--text);
+    align-items: center;
 }
 
 footer section i {
