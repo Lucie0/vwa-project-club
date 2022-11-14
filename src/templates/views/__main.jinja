@@ -10,6 +10,20 @@
     <meta name="author" content="Petr Chatrný, Lucie Pacáková, Simona Voráčková, Lucie Suchánková">
     <meta name="robots" content="index,follow">
 
+    <!-- open graph protocol -->
+    <meta property="og:site_name" content="Oddíly"/>
+    <meta property="og:title" content="Skautské oddíly"/>
+    <meta property="og:description" content="Webové stránky pro skautské oddíly"/>
+    <meta property="og:image" content="{{ url_for('img', filename='og.jpg', _external=True) }}">
+    <meta property="og:url" content="{{ url_for('web.index') }}">
+    <meta property="og:type" content="website"/>
+
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Skautské oddíly">
+    <meta property="twitter:description" content="Webové stránky pro skautské oddíly">
+    <meta property=" twitter:image" content="{{ url_for('img', filename='og.jpg', _external=True) }}">
+
     <!-- browser tab info -->
     <link rel="icon" href="{{ url_for('img', filename='favicon.ico') }}">
     <title>Skautské oddíly</title>
