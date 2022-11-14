@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+{% include "views/__header.jinja" %}
 {% block main %}{% endblock %}
 
 <script src="{{ url_for('js', filename='main.js') }}"></script>
