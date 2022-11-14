@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Webové stránky skautských oddílů.">
+    <meta name="keywords" content="oddíly, skauting, skautské oddíly">
+    <meta name="author" content="Petr Chatrný, Lucie Pacáková, Simona Voráčková, Lucie Suchánková">
+    <meta name="robots" content="index,follow">
+
+    <!-- browser tab info -->
+    <link rel="icon" href="{{ url_for('img', filename='favicon.ico') }}">
+    <title>Skautské oddíly</title>
+
+    <!-- static -->
+    <link rel="stylesheet" href="{{ url_for('css', filename='main.css') }}">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+{% block main %}{% endblock %}
+
+<script src="{{ url_for('js', filename='main.js') }}"></script>
+</body>
+</html>
